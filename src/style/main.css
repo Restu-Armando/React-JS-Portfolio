@@ -1,0 +1,159 @@
+* {
+  font-family: "DM Sans", sans-serif;
+  /* border: 1px solid black; */
+}
+
+:root {
+  --main-text: #42446e;
+  --text-faded: #666666;
+}
+
+.navbar {
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+  /* Add other styles as needed */
+}
+
+.navbar.scrolled {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Add your desired background color with some transparency for the blur effect */
+  backdrop-filter: blur(4px); /* Adjust the blur value as needed */
+  /* Add other styles as needed */
+}
+.navbar-nav a:hover {
+  color: #13b0f5;
+}
+.navbar-nav i:hover {
+  color: #13b0f5;
+}
+.hero {
+  padding-top: 100px;
+}
+.hero .row {
+  margin: 70px;
+}
+.hero .row h1 {
+  font-size: 45px;
+  font-weight: bold;
+}
+.name {
+  background: linear-gradient(90deg, #13b0f5, #e70faa);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.skills {
+  margin-bottom: 13em;
+}
+.skills h1 {
+  color: var(--main-text);
+}
+.skills .row {
+  margin-top: 7em;
+}
+.skills p {
+  color: var(--text-faded);
+}
+
+.project .button {
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  background: var(--main-text);
+  background-size: 400%;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.project .button:hover::before {
+  transform: scaleX(1);
+}
+
+.project .button-content {
+  position: relative;
+  z-index: 1;
+}
+
+.project .button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    rgba(231, 15, 170, 1) 10.8%,
+    rgba(19, 176, 245, 1) 94.3%
+  );
+  transition: all 0.475s;
+}
+
+.project h1 {
+  color: var(--main-text);
+}
+.project p {
+  color: var(--text-faded);
+}
+.project .card-title {
+  font-size: 16px;
+}
+.project .card-subtitle {
+  font-size: 14px;
+  color: var(--text-faded);
+}
+.project .card-text {
+  font-size: 10px;
+  color: var(--text-faded);
+}
+.project .card-link {
+  font-size: 11px;
+}
+.card {
+  overflow: hidden;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+.footer {
+  margin-top: 15em;
+  margin-bottom: 2em;
+}
+.footer a {
+  color: var(--text-faded);
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #13b0f5;
+}
+.footer-name {
+  background: linear-gradient(90deg, #13b0f5, #e70faa);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@media screen and (max-width: 992px) {
+  .hero {
+    padding-top: 10px;
+    height: 150vh;
+  }
+  .hero .row h1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .hero .row {
+    margin: 20px;
+  }
+}
