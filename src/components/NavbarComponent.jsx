@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Navbar, Nav } from "react-bootstrap";
-import { navLinks } from "../data/data";
+
+import { Link } from "react-router-dom";
 
 function NavbarComponent() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -43,25 +44,20 @@ function NavbarComponent() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto text-center fw-medium gap-3 ">
-              {/* {navLinks.map(() => {
-                return <div className="nav-link" key={link.id}>
-                  
-                </div>;
-              })} */}
-              <Nav.Link href="#home" className="mx-2 ">
-                Home
+              <Nav.Link href="" className="mx-2  ">
+                <Link to={"/"}>Home</Link>
               </Nav.Link>
-              <Nav.Link href="#link" className="mx-2 ">
-                About
+              <Nav.Link href="" className="mx-2 ">
+                <Link to={"/aboutme"}>About</Link>
               </Nav.Link>
-              <Nav.Link href="#home" className="mx-2 ">
-                Tech Stack
+              <Nav.Link href="" className="mx-2 ">
+                <Link to={"/skills"}>Skills</Link>
               </Nav.Link>
-              <Nav.Link nk href="#link" className="mx-2 ">
-                Projects
+              <Nav.Link href="" className="mx-2 ">
+                <Link to={"/project"}>Project</Link>
               </Nav.Link>
-              <Nav.Link href="#home" className="mx-2 ">
-                Contact
+              <Nav.Link href="" className="mx-2 ">
+                <Link to={"/contact"}>Contact</Link>
               </Nav.Link>
             </Nav>
             <Nav className="fs-5 text-center">

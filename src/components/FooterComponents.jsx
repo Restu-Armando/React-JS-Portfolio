@@ -1,5 +1,7 @@
 import React from "react";
-import { Row, Container, Col } from "react-bootstrap";
+import { Row, Container, Col, Nav } from "react-bootstrap";
+
+import { Link } from "react-router-dom";
 
 function FooterComponents() {
   // get current year for footer
@@ -38,11 +40,26 @@ function FooterComponents() {
         <Row>
           <Col sm={7} lg={6}>
             <div className="d-flex flex-column flex-md-row flex-lg-row gap-3 mb-3">
-              <a href="#">Home </a>
+              <Nav.Link href="" className="mx-2  ">
+                <Link to={"/"}>Home</Link>
+              </Nav.Link>
+              <Nav.Link href="" className="mx-2 ">
+                <Link to={"/aboutme"}>About</Link>
+              </Nav.Link>
+              <Nav.Link href="" className="mx-2 ">
+                <Link to={"/skills"}>Skills</Link>
+              </Nav.Link>
+              <Nav.Link href="" className="mx-2 ">
+                <Link to={"/project"}>Project</Link>
+              </Nav.Link>
+              <Nav.Link href="" className="mx-2 ">
+                <Link to={"/contact"}>Contact</Link>
+              </Nav.Link>
+              {/* <a href="#">Home </a>
               <a href="#">About</a>
               <a href="#">Technologies</a>
               <a href="#">Projects</a>
-              <a href="#">Contact</a>
+              <a href="#">Contact</a> */}
             </div>
           </Col>
           <Col sm={5} lg={6}>

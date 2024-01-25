@@ -30,6 +30,10 @@
 .navbar-nav i:hover {
   color: #13b0f5;
 }
+.nav-link a {
+  text-decoration: none;
+  color: var(--text-faded);
+}
 .hero {
   padding-top: 100px;
 }
@@ -126,7 +130,41 @@
 .card:hover {
   transform: scale(1.05);
 }
-
+.aboutme h1 {
+  color: var(--main-text);
+}
+.row:nth-child(1) p {
+  text-align: justify;
+}
+.contact {
+  margin-top: 10em;
+  height: 25vh;
+}
+.mail {
+  background: linear-gradient(90deg, #13b0f5, #e70faa);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-decoration: none;
+}
+.aboutme p {
+  color: var(--text-faded);
+  font-size: 18px;
+}
+.aboutme .detail-work p {
+  color: var(--text-faded);
+  font-size: 12px;
+}
+.aboutme .education p {
+  color: var(--text-faded);
+  font-size: 12px;
+}
+.aboutme span {
+  background-color: #d7ffe0;
+}
+.aboutme h6 {
+  color: var(--text-faded);
+  font-weight: normal;
+}
 .footer {
   margin-top: 15em;
   margin-bottom: 2em;

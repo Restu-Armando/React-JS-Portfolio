@@ -2,10 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 // import hero from "../assets/image/hero.png";
 import { TypeAnimation } from "react-type-animation";
+import SkillsPage from "./SkillsPage";
+import ProjectPage from "./ProjectPage";
 
-function HeroComponent() {
+function HeroPage() {
   return (
-    <div className="bg-light text-white vh-100 hero">
+    <div className="bg-light text-white vh-100 hero" id="home">
       <Container>
         <Row className="align-items-center">
           <Col lg="6" md="12" className="mt-4 mb-4 text-start text-dark">
@@ -31,7 +33,7 @@ function HeroComponent() {
             </h1>
           </Col>
 
-          <Col lg="6" md="12" className="text-center pb-5 ">
+          <Col lg="6" md="12" className="text-center pb-5 d-block ">
             <img
               src={"/hero.png"}
               alt=""
@@ -42,8 +44,10 @@ function HeroComponent() {
           </Col>
         </Row>
       </Container>
+      {/* <SkillsPage></SkillsPage>
+      <ProjectPage></ProjectPage> */}
     </div>
   );
 }
 
-export default HeroComponent;
+export default HeroPage;

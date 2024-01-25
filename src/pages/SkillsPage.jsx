@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-const SkillsComponents = () => {
+const SkillsPage = () => {
   return (
-    <div className="skills">
+    <div className="skills" id="skills">
       <Container className="text-center fluid">
         <h1 className="mt-5">My Tech Stack</h1>
         <p className="mb-5">
@@ -54,4 +54,4 @@ const SkillsComponents = () => {
   );
 };
 
-export default SkillsComponents;
+export default SkillsPage;

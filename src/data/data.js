@@ -47,32 +47,55 @@ export const TechnologiData = [
     tag: "HTML, PHP, Yii2, Javascript, CSS, Bootstrap 4",
     imageURL: "/card/card6.png",
   },
+  {
+    id: 7,
+    name: "Expert System for Boat Engine Fault Detection",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, perferendis!",
+    tag: "HTML, PHP, Yii2, Javascript, CSS, Bootstrap 4",
+    imageURL: "/card/card6.png",
+  },
+  {
+    id: 8,
+    name: "Expert System for Boat Engine Fault Detection",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, perferendis!",
+    tag: "HTML, PHP, Yii2, Javascript, CSS, Bootstrap 4",
+    imageURL: "/card/card6.png",
+  },
 ];
 
-export const navLinks = [
+export const Experience = [
   {
     id: 1,
-    path: "",
-    text: "Home",
+    job: "FrontEnd Developer",
+    perusahaan: "AFKEKSI.ID",
+    kota: "Surabaya, Indonesia",
+    Tanggal: "6/2023 - 9/2023",
+    type: "Internship",
   },
   {
     id: 2,
-    path: "aboutme",
-    text: "About Me",
+    job: "WordPress",
+    perusahaan: "PT.Brillian Sentra Informatika",
+    kota: "Jakarta, Indonesia",
+    Tanggal: "1/2019 - 1/2019",
+    type: "Freelance",
   },
   {
     id: 3,
-    path: "project",
-    text: "Projects",
+    job: "WordPress",
+    perusahaan: "BPS",
+    kota: "Padang, Indonesia",
+    Tanggal: "6/2023 - 9/2023",
+    type: "Freelance",
   },
   {
     id: 4,
-    path: "contact",
-    text: "Contact",
-  },
-  {
-    id: 5,
-    path: "skills",
-    text: "Skills",
+    job: "WordPress",
+    perusahaan: "AFKEKSI.ID",
+    kota: "Surabaya, Indonesia",
+    Tanggal: "6/2023 - 9/2023",
+    type: "Internship",
   },
 ];
