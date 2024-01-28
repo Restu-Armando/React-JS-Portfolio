@@ -32,14 +32,16 @@ function NavbarComponent() {
         className={`navbar ${isScrolled ? "scrolled" : ""}`}
       >
         <Container>
-          <Navbar.Brand href="#home">
-            <img
-              alt="Logo Brand"
-              src="./public/logo 1.svg"
-              width="60"
-              height="60"
-              className="d-inline-block align-top"
-            />{" "}
+          <Navbar.Brand>
+            <Link to={"/"}>
+              <img
+                alt="Logo Brand"
+                src="./public/logo 1.svg"
+                width="60"
+                height="60"
+                className="d-inline-block align-top"
+              />{" "}
+            </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -61,13 +63,19 @@ function NavbarComponent() {
               </Nav.Link>
             </Nav>
             <Nav className="fs-5 text-center">
-              <a href="http://google.com">
+              <a href="https://github.com/Restu-Armando" target="_blank">
                 <i class="fa-brands fa-github mx-1 text-muted "></i>
               </a>
-              <a href="http://google.com">
+              <a
+                href="https://www.instagram.com/restu.armando/"
+                target="_blank"
+              >
                 <i class="fa-brands fa-square-instagram mx-1 text-muted "></i>
               </a>
-              <a href="http://google.com">
+              <a
+                href="https://www.linkedin.com/in/restu-armando/"
+                target="_blank"
+              >
                 <i class="fa-brands fa-linkedin mx-1 text-muted "></i>
               </a>
             </Nav>

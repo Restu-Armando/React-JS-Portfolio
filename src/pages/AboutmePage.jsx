@@ -39,7 +39,7 @@ function AboutmePage() {
                   </p>
                   <Col md={5}>
                     <p className="mb-0 ">
-                      <i class="fa-solid fa-location-dot"></i> {data.kota}
+                      <i class="fa-solid fa-location-dot mx-1"></i> {data.kota}
                     </p>
                   </Col>
                 </Col>
@@ -49,9 +49,9 @@ function AboutmePage() {
                 <span className="badge text-success rounded-4 border-0 mt-2 mb-2 ">
                   {data.type}
                 </span>
-                <Col className=" mb-2 text-end">
-                  <p className="mb-0">
-                    <i class="fa-regular fa-calendar"></i>
+                <Col className=" mb-2 ">
+                  <p className="mb-0 text-end">
+                    <i class="fa-regular fa-calendar mx-2"></i>
                     {data.Tanggal}
                   </p>
                 </Col>
@@ -74,9 +74,11 @@ function AboutmePage() {
                 <i class="fa-regular fa-building "></i> Universitas Putra
                 Indonesia YPTK Padang
               </p>
-              <p className="mb-0">
-                <i class="fa-solid fa-location-dot"></i> Padang, Indonesia
-              </p>
+              <Col md={5}>
+                <p className="mb-0">
+                  <i class="fa-solid fa-location-dot"></i> Padang, Indonesia
+                </p>
+              </Col>
             </Col>
           </Col>
 

@@ -11,29 +11,34 @@ import ContactPage from "./pages/ContactPage";
 import HeroPage from "./pages/HeroPage";
 
 import { Nav } from "react-bootstrap";
+import ScrollToTopOnNavigation from "./components/ScrollToTopOnNavigation";
 
 function App() {
   return (
-    <Router>
-      <NavbarComponent></NavbarComponent>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <div>
-              <HeroPage />
-              <SkillsPage />
-              <ProjectPage />
-            </div>
-          }
-        />
-        <Route path="/aboutme" element={<AboutmePage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="/skills" element={<SkillsPage />} />
-        <Route path="/project" element={<ProjectPage />} />
-      </Routes>
-      <FooterComponents></FooterComponents>
-    </Router>
+    <div>
+      <Router>
+        <NavbarComponent></NavbarComponent>
+        <ScrollToTopOnNavigation />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <div>
+                <HeroPage />
+                <SkillsPage />
+                <ProjectPage />
+              </div>
+            }
+          />
+
+          <Route path="/aboutme" element={<AboutmePage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/skills" element={<SkillsPage />} />
+          <Route path="/project" element={<ProjectPage />} />
+        </Routes>
+        <FooterComponents></FooterComponents>
+      </Router>
+    </div>
   );
 }
 
