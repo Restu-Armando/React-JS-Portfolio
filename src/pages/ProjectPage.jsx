@@ -13,15 +13,31 @@ const ProjectPage = () => {
   return (
     <div className="project mb-5" id="project">
       <Container className="mt-lg-5">
-        <h1 className="mt-lg-5 text-center">Projects</h1>
-        <p className="mb-5 text-center">Things I've Build so far</p>
+        <h1
+          data-aos="zoom-in-down"
+          data-aos-offset="300"
+          className="mt-lg-5 text-center"
+        >
+          Projects
+        </h1>
+        <p
+          data-aos="zoom-in-down"
+          data-aos-offset="150"
+          className="mb-5 text-center"
+        >
+          Things I've Build so far
+        </p>
         <Row lg="3" md="2" className="g-5">
           {TechnologiData.slice(0, visibleProjects).map((data, id) => (
             <Col
               key={id}
               className="d-grid align-items-center justify-content-center "
             >
-              <Card className="rounded-4">
+              <Card
+                data-aos="fade-up"
+                data-aos-offset={data.offset}
+                className="rounded-4"
+              >
                 <Card.Img
                   variant="top"
                   src={data.imageURL}

@@ -9,8 +9,15 @@ function AboutmePage() {
       <Container className="mt-5">
         <Row>
           <Col md={7} className="pt-2 desc">
-            <h1 className="fw-bold">About Me</h1>
-            <p className="p-2">
+            <h1 data-aos="fade-right" className="fw-bold">
+              About Me
+            </h1>
+            <p
+              data-aos="fade-right"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="50"
+              className="p-2"
+            >
               As an undergraduate student at Universitas Putra Indonesia YPTK
               Padang with a computer science background, I have the
               responsibility of creating attractive and responsive websites as a
@@ -24,13 +31,18 @@ function AboutmePage() {
           </Col>
         </Row>
         <Row className="mt-2">
-          <Col md={7} className="pt-2">
+          <Col data-aos="fade-right" md={7} className="pt-2">
             <h1 className="fw-bold">Work Experience</h1>
           </Col>
         </Row>
         {Experience.map((data, id) => (
           <Col key={id}>
-            <Row className="mt-2 detail-work">
+            <Row
+              data-aos="fade-right"
+              data-aos-easing="ease-in-out"
+              data-aos-once="true"
+              className="mt-2 detail-work"
+            >
               <Col md={5} className="pt-2 g-col-6 justify-content-beetwen">
                 <h6 className="mt-2 mb-2">{data.job}</h6>
                 <Col className="d-flex justify-content-between mb-2">
@@ -61,12 +73,17 @@ function AboutmePage() {
           </Col>
         ))}
 
-        <Row className="mt-2">
+        <Row data-aos="fade-right" data-aos-once="true" className="mt-2">
           <Col md={7} className="pt-2">
             <h1 className=" fw-bold">Education</h1>
           </Col>
         </Row>
-        <Row className="mt-2 education">
+        <Row
+          data-aos="fade-right"
+          data-aos-easing="ease-in-out"
+          data-aos-once="true"
+          className="mt-2 education"
+        >
           <Col md={5} className="pt-2 g-col-6 justify-content-beetwen">
             <h6 className="mt-2 mb-2">Computer Bachelor's Degree</h6>
             <Col className="d-flex justify-content-between mb-2">

@@ -11,7 +11,7 @@ function HeroPage() {
       <Container>
         <Row className="align-items-center">
           <Col lg="6" md="12" className="mt-4 mb-4 text-start text-dark">
-            <h1>
+            <h1 data-aos="fade-down">
               Hi 👋, <br /> My name is <br />
               <span className="name"> Restu Armando </span> <br />
               <TypeAnimation
@@ -31,7 +31,7 @@ function HeroPage() {
                 repeat={Infinity}
               />
             </h1>
-            <button className="button shadow mt-5">
+            <button data-aos="fade-right" className="button shadow mt-5">
               <a
                 href="https://drive.google.com/file/d/1josLACzrT6YHvLEY9rB8u0OxjewCcLgp/view?usp=sharing"
                 target="_blank"
@@ -42,7 +42,12 @@ function HeroPage() {
             </button>
           </Col>
 
-          <Col lg="6" md="12" className="text-center pb-5 d-block ">
+          <Col
+            data-aos="zoom-in"
+            lg="6"
+            md="12"
+            className="text-center pb-5 d-block "
+          >
             <img
               src={"/hero.png"}
               alt=""
@@ -53,8 +58,6 @@ function HeroPage() {
           </Col>
         </Row>
       </Container>
-      {/* <SkillsPage></SkillsPage>
-      <ProjectPage></ProjectPage> */}
     </div>
   );
 }

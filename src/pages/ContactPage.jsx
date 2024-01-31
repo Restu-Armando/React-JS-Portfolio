@@ -6,7 +6,7 @@ function ContactPage() {
     <div className="contact " id="contact">
       <Container>
         <Row className="d-grid justify-content-center align-items-center mt-5">
-          <Col className="text-center">
+          <Col data-aos="zoom-in" data-aos-delay="250" className="text-center">
             <h1>For Any Question Please Mail Us:</h1>
             <h1>
               {" "}

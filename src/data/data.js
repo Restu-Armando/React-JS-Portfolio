@@ -8,6 +8,8 @@ export const TechnologiData = [
     imageURL: "/project/project-4.png",
     // linkView: "https://restu-armando.github.io/portfolio-restu-armando",
     LinkCode: "https://github.com/Restu-Armando/portfolio-restu-armando",
+    // for aos js ofsset show
+    offset: "100",
   },
   {
     id: 2,
@@ -17,6 +19,7 @@ export const TechnologiData = [
     imageURL: "/project/project-1.png",
     linkView: "https://restu-armando.github.io/portfolio-restu-armando",
     LinkCode: "https://github.com/Restu-Armando/portfolio-restu-armando",
+    offset: "150",
   },
   {
     id: 3,
@@ -26,6 +29,7 @@ export const TechnologiData = [
     imageURL: "/project/project-2.png",
     linkView: "https://portfolio-bootstrap-5.netlify.app/",
     // LinkCode: "#",
+    offset: "200",
   },
   {
     id: 4,
@@ -36,6 +40,7 @@ export const TechnologiData = [
     imageURL: "/project/project-3.png",
     linkView: "https://antrian-booking.netlify.app/",
     // LinkCode: "",
+    offset: "250",
   },
   {
     id: 5,
@@ -45,6 +50,7 @@ export const TechnologiData = [
     imageURL: "/project/wordpress.jpg",
     // linkView: "https://restu-armando.github.io/portfolio-restu-armando",
     // LinkCode: "https://github.com/Restu-Armando/portfolio-restu-armando",
+    offset: "300",
   },
   {
     id: 6,
@@ -54,6 +60,7 @@ export const TechnologiData = [
     imageURL: "/project/expertsystem.png",
     // linkView: "https://restu-armando.github.io/portfolio-restu-armando",
     // LinkCode: "https://github.com/Restu-Armando/portfolio-restu-armando",
+    offset: "350",
   },
   {
     id: 7,
@@ -63,6 +70,7 @@ export const TechnologiData = [
     imageURL: "/project/expertsystem.png",
     // linkView: "https://restu-armando.github.io/portfolio-restu-armando",
     // LinkCode: "https://github.com/Restu-Armando/portfolio-restu-armando",
+    offset: "400",
   },
 ];
 
