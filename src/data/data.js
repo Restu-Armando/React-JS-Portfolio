@@ -6,7 +6,7 @@ export const TechnologiData = [
       "Design, Develop and Update an Old Web Portfolio with a New One Using React JS",
     tag: "HTML, Vite, React JS, Javascript, CSS, Bootstrap 5",
     imageURL: "/project/project-4.png",
-    // linkView: "https://restu-armando.github.io/portfolio-restu-armando",
+    linkView: "/",
     LinkCode: "https://github.com/Restu-Armando/portfolio-restu-armando",
     // for aos js ofsset show
     offset: "100",
