@@ -18,9 +18,9 @@ function HeroPage() {
                 className="mb-3"
                 sequence={[
                   // Same substring at the start will only be typed once, initially
-                  "I Am Front End Developer🧑‍💻",
+                  "I Am FrontEnd Developer🧑‍💻",
                   1000,
-                  "I Am Fullstack Developer🧑‍💻",
+                  "I Am Web Development 🌍",
                   1000,
                   //   "We produce food for Guinea Pigs",
                   //   1000,
@@ -31,6 +31,15 @@ function HeroPage() {
                 repeat={Infinity}
               />
             </h1>
+            <button className="button shadow mt-5">
+              <a
+                href="https://drive.google.com/file/d/1josLACzrT6YHvLEY9rB8u0OxjewCcLgp/view?usp=sharing"
+                target="_blank"
+                className="text-decoration-none"
+              >
+                <span className="button-content"> Here My CV </span>
+              </a>
+            </button>
           </Col>
 
           <Col lg="6" md="12" className="text-center pb-5 d-block ">

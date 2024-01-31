@@ -12,8 +12,8 @@ const ProjectPage = () => {
 
   return (
     <div className="project mb-5" id="project">
-      <Container className="mt-5">
-        <h1 className="mt-5 text-center">Projects</h1>
+      <Container className="mt-lg-5">
+        <h1 className="mt-lg-5 text-center">Projects</h1>
         <p className="mb-5 text-center">Things I've Build so far</p>
         <Row lg="3" md="2" className="g-5">
           {TechnologiData.slice(0, visibleProjects).map((data, id) => (
@@ -21,7 +21,7 @@ const ProjectPage = () => {
               key={id}
               className="d-grid align-items-center justify-content-center "
             >
-              <Card className="rounded-4" style={{ width: "18rem" }}>
+              <Card className="rounded-4">
                 <Card.Img
                   variant="top"
                   src={data.imageURL}
@@ -35,14 +35,16 @@ const ProjectPage = () => {
                   <Card.Text>Tech Stack : {data.tag}</Card.Text>
 
                   <Card.Link
-                    href="#"
+                    href={data.linkView}
+                    target="_blank"
                     className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover "
                   >
                     <i className="fa-solid fa-link me-1"></i> Live Priview
                   </Card.Link>
 
                   <Card.Link
-                    href="#"
+                    href={data.LinkCode}
+                    target="_blank"
                     className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover "
                   >
                     <i className="fa-brands fa-github me-1"></i> View Code

@@ -23,60 +23,102 @@ function NavbarComponent() {
     };
   }, []);
 
+  const [navbarExpanded, setNavbarExpanded] = useState(false);
+
+  const handleNavbarClose = () => {
+    // Menutup navbar jika sedang terbuka
+    if (navbarExpanded) {
+      setNavbarExpanded(false);
+    }
+  };
+
   return (
     <div className="sticky-top">
       <Navbar
+        collapseOnSelect
         // bg="light"
         // data-bs-theme="light"
         expand="lg"
-        className={`navbar ${isScrolled ? "scrolled" : ""}`}
+        expanded={navbarExpanded}
+        className={`navbar navbar-expand-lg ${isScrolled ? "scrolled" : ""}`}
       >
         <Container>
-          <Navbar.Brand>
-            <Link to={"/"}>
-              <img
-                alt="Logo Brand"
-                src="./public/logo 1.svg"
-                width="60"
-                height="60"
-                className="d-inline-block align-top"
-              />{" "}
-            </Link>
+          <Navbar.Brand as={Link} to="/" onClick={handleNavbarClose}>
+            <img
+              alt="Logo Brand"
+              src="./public/logo/restu transparant.svg"
+              width="70"
+              height="70"
+              className="d-inline-block align-top"
+            />{" "}
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle
+            aria-controls="basic-navbar-nav"
+            onClick={() => setNavbarExpanded(!navbarExpanded)}
+          />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto text-center fw-medium gap-3 ">
-              <Nav.Link href="" className="mx-2  ">
-                <Link to={"/"}>Home</Link>
+              <Nav.Link
+                as={Link}
+                to={"/"}
+                className="mx-2 "
+                onClick={handleNavbarClose}
+              >
+                {" "}
+                Home
               </Nav.Link>
-              <Nav.Link href="" className="mx-2 ">
-                <Link to={"/aboutme"}>About</Link>
+              <Nav.Link
+                as={Link}
+                to={"/aboutme"}
+                className="mx-2 "
+                onClick={handleNavbarClose}
+              >
+                {" "}
+                About
               </Nav.Link>
-              <Nav.Link href="" className="mx-2 ">
-                <Link to={"/skills"}>Skills</Link>
+              <Nav.Link
+                as={Link}
+                to={"skills"}
+                className="mx-2 "
+                onClick={handleNavbarClose}
+              >
+                {" "}
+                Skills
               </Nav.Link>
-              <Nav.Link href="" className="mx-2 ">
-                <Link to={"/project"}>Project</Link>
+              <Nav.Link
+                as={Link}
+                to={"/project"}
+                className="mx-2 "
+                onClick={handleNavbarClose}
+              >
+                {" "}
+                Project
               </Nav.Link>
-              <Nav.Link href="" className="mx-2 ">
-                <Link to={"/contact"}>Contact</Link>
+              <Nav.Link
+                as={Link}
+                to={"/contact"}
+                className="mx-2 "
+                onClick={handleNavbarClose}
+              >
+                {" "}
+                Contact
               </Nav.Link>
             </Nav>
             <Nav className="fs-5 text-center">
               <a href="https://github.com/Restu-Armando" target="_blank">
-                <i class="fa-brands fa-github mx-1 text-muted "></i>
+                <i className="fa-brands fa-github mx-1 text-muted "></i>
               </a>
               <a
                 href="https://www.instagram.com/restu.armando/"
                 target="_blank"
               >
-                <i class="fa-brands fa-square-instagram mx-1 text-muted "></i>
+                <i className="fa-brands fa-square-instagram mx-1 text-muted "></i>
               </a>
               <a
                 href="https://www.linkedin.com/in/restu-armando/"
                 target="_blank"
               >
-                <i class="fa-brands fa-linkedin mx-1 text-muted "></i>
+                <i className="fa-brands fa-linkedin mx-1 text-muted "></i>
               </a>
             </Nav>
           </Navbar.Collapse>

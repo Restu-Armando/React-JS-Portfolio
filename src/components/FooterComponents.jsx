@@ -13,7 +13,13 @@ function FooterComponents() {
         <Row className="mb-4">
           <Col sm={3} lg={6}>
             <div className="d-flex justify-content-start">
-              <img src={"/logo-2.svg"} alt="" className="img-fluid" />
+              <img
+                src={"./logo/restu.png"}
+                alt=""
+                className="img-fluid"
+                width="80"
+                height="80"
+              />
             </div>
           </Col>
           <Col sm={6} lg={3}>
@@ -24,19 +30,19 @@ function FooterComponents() {
           <Col sm={3} lg={3}>
             <div className="d-flex justify-content-end mt-3 gap-3">
               <a href="https://github.com/Restu-Armando" target="_blank">
-                <i class="fa-brands fa-github mx-1 text-muted "></i>
+                <i className="fa-brands fa-github mx-1 text-muted "></i>
               </a>
               <a
                 href="https://www.instagram.com/restu.armando/"
                 target="_blank"
               >
-                <i class="fa-brands fa-square-instagram mx-1 text-muted "></i>
+                <i className="fa-brands fa-square-instagram mx-1 text-muted "></i>
               </a>
               <a
                 href="https://www.linkedin.com/in/restu-armando/"
                 target="_blank"
               >
-                <i class="fa-brands fa-linkedin mx-1 text-muted "></i>
+                <i className="fa-brands fa-linkedin mx-1 text-muted "></i>
               </a>
             </div>
           </Col>

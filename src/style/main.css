@@ -27,9 +27,7 @@
 .navbar-nav a:hover {
   color: #13b0f5;
 }
-.navbar-nav i:hover {
-  color: #13b0f5;
-}
+
 .nav-link a {
   text-decoration: none;
   color: var(--text-faded);
@@ -49,8 +47,53 @@
   -webkit-background-clip: text;
   color: transparent;
 }
+
+.hero .button {
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  background: var(--main-text);
+  background-size: 400%;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.hero .button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero .button:hover::before {
+  transform: scaleX(1);
+}
+
+.hero .button-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero .button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    rgba(231, 15, 170, 1) 10.8%,
+    rgba(19, 176, 245, 1) 94.3%
+  );
+  transition: all 0.475s;
+}
+
 .skills {
-  margin-bottom: 13em;
+  margin-bottom: 10rem;
 }
 .skills h1 {
   color: var(--main-text);
@@ -102,6 +145,16 @@
   transition: all 0.475s;
 }
 
+.project .card {
+  width: 18rem;
+  height: 22rem;
+}
+.project .card img {
+  flex: 1 1 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .project h1 {
   color: var(--main-text);
 }
@@ -121,6 +174,7 @@
 }
 .project .card-link {
   font-size: 11px;
+  flex: 0 0 auto;
 }
 .card {
   overflow: hidden;
@@ -187,11 +241,27 @@
     padding-top: 10px;
     height: 150vh;
   }
+  .hero .row {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
   .hero .row h1 {
     font-size: 30px;
     font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
   }
   .hero .row {
     margin: 20px;
+  }
+  .hero .row .text-center {
+    margin-top: 20px;
+  }
+
+  .hero .button {
+    margin-top: 20px;
+    display: block; /* Mengubah tata letak tombol menjadi blok agar dapat diatur margin */
+    margin-left: auto;
+    margin-right: auto;
   }
 }
