@@ -44,7 +44,7 @@
 }
 .name {
   background: linear-gradient(90deg, #13b0f5, #e70faa);
-  -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 
@@ -196,7 +196,7 @@
 }
 .mail {
   background: linear-gradient(90deg, #13b0f5, #e70faa);
-  -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   text-decoration: none;
 }
@@ -232,7 +232,7 @@
 }
 .footer-name {
   background: linear-gradient(90deg, #13b0f5, #e70faa);
-  -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 
