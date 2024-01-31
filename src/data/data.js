@@ -3,7 +3,7 @@ export const TechnologiData = [
     id: 1,
     name: "React JS",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, perferendis!",
+      "Design, Develop and Update an Old Web Portfolio with a New One Using React JS",
     tag: "HTML, Vite, React JS, Javascript, CSS, Bootstrap 5",
     imageURL: "/project/project-4.png",
     // linkView: "https://restu-armando.github.io/portfolio-restu-armando",

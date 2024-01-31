@@ -55,7 +55,7 @@ const ProjectPage = () => {
                     target="_blank"
                     className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover "
                   >
-                    <i className="fa-solid fa-link me-1"></i> Live Priview
+                    <i className="fa-solid fa-link me-1"></i> Live Preview
                   </Card.Link>
 
                   <Card.Link
