@@ -46,7 +46,7 @@ function NavbarComponent() {
           <Navbar.Brand as={Link} to="/" onClick={handleNavbarClose}>
             <img
               alt="Logo Brand"
-              src="./public/logo/restu transparant.svg"
+              src="/logo/restu-transparant.svg"
               width="70"
               height="70"
               className="d-inline-block align-top"
