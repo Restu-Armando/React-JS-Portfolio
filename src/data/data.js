@@ -1,11 +1,11 @@
 export const TechnologiData = [
   {
     id: 1,
-    name: "React JS",
+    name: "Minimalist Portfolio Using React JS",
     description:
       "Design, Develop and Update an Old Web Portfolio with a New One Using React JS",
     tag: "HTML, Vite, React JS, Javascript, CSS, Bootstrap 5",
-    imageURL: "/project/project-4.png",
+    imageURL: "/project/Reactjs.png",
     linkView: "/",
     LinkCode: "https://github.com/Restu-Armando/React-JS-Portfolio",
     // for aos js ofsset show
@@ -44,7 +44,7 @@ export const TechnologiData = [
   },
   {
     id: 5,
-    name: "WordPress at PT.Brillian Sentra Informatika",
+    name: "Creating a Website Using WordPress CMS",
     description: "Created design and content population and completed 3 pages",
     tag: "HTML, WordPress, Javascript, CSS, Bootstrap 4",
     imageURL: "/project/wordpress.jpg",
@@ -85,18 +85,18 @@ export const Experience = [
   },
   {
     id: 2,
-    job: "WordPress",
-    perusahaan: "PT.Brillian Sentra Informatika",
-    kota: "Jakarta, Indonesia",
-    Tanggal: "01/2019 - 01/2019",
+    job: "Developing Microsite Using Softr.io CMS",
+    perusahaan: "Internal MicroSite for Government",
+    kota: "Padang, Indonesia",
+    Tanggal: "07/2023 - 09/2023",
     type: "Freelance",
   },
   {
     id: 3,
-    job: "Softr.io",
-    perusahaan: "Internal Micro Site for Government",
-    kota: "Padang, Indonesia",
-    Tanggal: "07/2023 - 09/2023",
+    job: "Develop a Website Using WordPress CMS",
+    perusahaan: "PT.Brillian Sentra Informatika",
+    kota: "Jakarta, Indonesia",
+    Tanggal: "01/2019 - 01/2019",
     type: "Freelance",
   },
 ];
@@ -110,23 +110,24 @@ export const Certifications = [
     type: "Done",
     link: "https://www.dicoding.com/certificates/53XE457J9ZRN",
   },
+
   {
     id: 2,
-    title: "Belajar Dasar Pemrograman Web",
-    publish: "DICODING",
-    kota: "Bandung, Indonesia",
-    Tanggal: "09/2023 - 09/2026",
-    type: "Done",
-    link: "https://www.dicoding.com/certificates/07Z6889DYXQR",
-  },
-  {
-    id: 3,
     title: "Belajar Membuat Aplikasi Web dengan React",
     publish: "DICODING",
     kota: "Bandung, Indonesia",
     Tanggal: "10/2023 - 10/2026",
     type: "Done",
     link: "https://www.dicoding.com/certificates/6RPN4JWM4X2M",
+  },
+  {
+    id: 3,
+    title: "Belajar Dasar Pemrograman Web",
+    publish: "DICODING",
+    kota: "Bandung, Indonesia",
+    Tanggal: "09/2023 - 09/2026",
+    type: "Done",
+    link: "https://www.dicoding.com/certificates/07Z6889DYXQR",
   },
 ];
 
@@ -138,57 +139,57 @@ export const Skills = [
   },
   {
     id: 2,
-    name: "HTML",
+    name: "css",
     imageURL: "./tech/css.svg",
   },
   {
     id: 3,
-    name: "HTML",
+    name: "js",
     imageURL: "./tech/js.svg",
   },
   {
     id: 4,
-    name: "HTML",
+    name: "reactjs",
     imageURL: "./tech/reactjs.svg",
   },
   {
     id: 5,
-    name: "HTML",
+    name: "bootstrap",
     imageURL: "./tech/bootstrap.svg",
   },
   {
     id: 6,
-    name: "HTML",
+    name: "tailwind",
     imageURL: "./tech/tailwind.svg",
   },
   {
     id: 7,
-    name: "HTML",
+    name: "github",
     imageURL: "./tech/github.svg",
   },
   {
     id: 8,
-    name: "HTML",
+    name: "vscode",
     imageURL: "./tech/vscode.svg",
   },
   {
     id: 9,
-    name: "HTML",
+    name: "git",
     imageURL: "./tech/git.svg",
   },
   {
     id: 10,
-    name: "HTML",
+    name: "fimga",
     imageURL: "./tech/figma.svg",
   },
   {
     id: 11,
-    name: "HTML",
+    name: "mysql",
     imageURL: "./tech/mysql.svg",
   },
   {
     id: 12,
-    name: "HTML",
+    name: "php",
     imageURL: "./tech/php.svg",
   },
 ];
