@@ -33,7 +33,7 @@ function HeroPage() {
             </h1>
             <button data-aos="fade-right" className="button shadow mt-5">
               <a
-                href="https://drive.google.com/file/d/1josLACzrT6YHvLEY9rB8u0OxjewCcLgp/view?usp=sharing"
+                href="https://drive.google.com/file/d/1DWapCvTwnLxr0syi9fs6jIqYesuQc3l5/view?usp=sharing"
                 target="_blank"
                 className="text-decoration-none"
               >

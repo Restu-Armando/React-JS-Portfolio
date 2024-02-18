@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-import { Experience } from "../data/data";
+import { Certifications, Experience } from "../data/data";
 
 function AboutmePage() {
   return (
@@ -30,6 +30,9 @@ function AboutmePage() {
             </p>
           </Col>
         </Row>
+
+        {/* SECTION WORK EXPERIENCE */}
+
         <Row className="mt-2">
           <Col data-aos="fade-right" md={7} className="pt-2">
             <h1 className="fw-bold">Work Experience</h1>
@@ -73,6 +76,8 @@ function AboutmePage() {
           </Col>
         ))}
 
+        {/* SECTION EDUCATION */}
+
         <Row data-aos="fade-right" data-aos-once="true" className="mt-2">
           <Col md={7} className="pt-2">
             <h1 className=" fw-bold">Education</h1>
@@ -110,6 +115,52 @@ function AboutmePage() {
             </Col>
           </Col>
         </Row>
+
+        <hr className="col-md-7 border-2" />
+
+        {/* SECTION CERTIFICATIONS */}
+
+        <Row data-aos="fade-right" data-aos-once="true" className="mt-2">
+          <Col md={7} className="pt-2">
+            <h1 className=" fw-bold">Certifications</h1>
+          </Col>
+        </Row>
+        {Certifications.map((data, id) => (
+          <Row
+            key={id}
+            data-aos="fade-right"
+            data-aos-easing="ease-in-out"
+            data-aos-once="true"
+            className="mt-2 education"
+          >
+            <Col md={5} className="pt-2 g-col-6 justify-content-beetwen">
+              <h6 className="mt-2 mb-2">{data.title} </h6>
+              <Col className="d-flex justify-content-between mb-2">
+                <p className="mb-0">
+                  <i class="fa-regular fa-building "></i> {data.publish}
+                </p>
+                <Col md={5}>
+                  <p className="mb-0">
+                    <i class="fa-solid fa-location-dot"></i> {data.kota}
+                  </p>
+                </Col>
+              </Col>
+            </Col>
+
+            <Col md={2} className="pt-2 g-col-6 text-end">
+              <span className=" badge text-success rounded-4 border-0 mt-2 mb-2 ">
+                <a className=" text-success" target="_blank" href={data.link}>
+                  View
+                </a>
+              </span>
+              <Col className=" mb-2 text-end">
+                <p className="mb-0">
+                  <i class="fa-regular fa-calendar"></i> {data.Tanggal}
+                </p>
+              </Col>
+            </Col>
+          </Row>
+        ))}
         <hr className="col-md-7 border-2" />
       </Container>
     </div>
