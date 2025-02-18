@@ -1,6 +1,12 @@
 * {
-  font-family: "DM Sans", sans-serif;
+  font-family: 'Sora', sans-serif;
   /* border: 1px solid black; */
+}
+
+/* html, */
+body {
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
 }
 
 :root {
@@ -12,8 +18,8 @@
   background-color: transparent;
   transition: background-color 0.5s ease;
   /* Add other styles as needed */
+  width: 100%;
 }
-
 .navbar.scrolled {
   background-color: rgba(
     255,
@@ -22,7 +28,6 @@
     0.9
   ); /* Add your desired background color with some transparency for the blur effect */
   backdrop-filter: blur(4px); /* Adjust the blur value as needed */
-  /* Add other styles as needed */
 }
 .navbar-nav a:hover {
   color: #13b0f5;
@@ -33,21 +38,42 @@
   color: var(--text-faded);
 }
 .hero {
-  padding-top: 100px;
+  position: relative;
+  padding-top: 4rem;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  overflow: hidden;
+  z-index: 2;
 }
 .hero .row {
   margin: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.hero .row h1 {
-  font-size: 45px;
-  font-weight: bold;
+.hero .row .introduce {
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--text-faded);
+  line-height: 1.2;
 }
+/* .hero .row .header {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 400;
+  color: var(--text-faded);
+  display: inline-block;
+  text-align: center;
+} */
 .name {
-  background: linear-gradient(90deg, #13b0f5, #e70faa);
-  background-clip: text;
+  background: linear-gradient(90deg, #243748, #4b749f, #303a56);
+  -webkit-background-clip: text;
   color: transparent;
+  font-weight: 600;
+  font-size: clamp(36px, 5vw, 52px);
+  display: inline-block;
+  margin-bottom: 5px;
 }
-
 .hero .button {
   position: relative;
   overflow: hidden;
@@ -64,18 +90,15 @@
   color: #fff;
   text-decoration: none;
 }
-
 .hero .button:hover::before {
   transform: scaleX(1);
 }
-
 .hero .button-content {
   position: relative;
   z-index: 1;
 }
-
 .hero .button::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -90,6 +113,110 @@
     rgba(19, 176, 245, 1) 94.3%
   );
   transition: all 0.475s;
+}
+.hero-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.box {
+  position: relative;
+  width: 90vw;
+  height: 90vw;
+  max-width: 300px;
+  max-height: 300px;
+  background: #303a56;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.box::before {
+  content: '';
+  position: absolute;
+  inset: -5% 35%;
+  background: linear-gradient(315deg, #00ccff, #d400d4);
+  transition: 0.5s;
+  animation: animate 4s linear infinite;
+}
+.box:hover::before {
+  inset: -10% 0%;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  0% {
+    transform: rotate(360deg);
+  }
+}
+.box::after {
+  content: '';
+  position: absolute;
+  inset: 1.5%;
+  background: #f8f9fa;
+  border-radius: 50%;
+  z-index: 1;
+}
+.content {
+  position: absolute;
+  inset: 2%;
+  /* border: 6px solid #24cdf7; */
+  z-index: 3;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.content img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+  pointer-events: none;
+}
+.parallax-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+.parallax {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: -1; /* Background */
+}
+.parallax span {
+  min-height: 85vh;
+  /* font-family: 'Plaster', cursive; */
+  letter-spacing: -3px;
+}
+.scroller {
+  display: flex;
+  width: max-content;
+  font-size: 4.5rem;
+  font-weight: 800;
+  color: #42446e;
+  opacity: 0.2;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.parallax-top {
+  position: absolute;
+  top: 10%; /* Atur sesuai kebutuhan */
+  width: 100%;
+}
+.parallax-bottom {
+  position: absolute;
+  bottom: 10%; /* Atur sesuai kebutuhan */
+  width: 100%;
 }
 
 .skills {
@@ -128,7 +255,7 @@
 }
 
 .project .button::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -238,8 +365,9 @@
 
 @media screen and (max-width: 992px) {
   .hero {
-    padding-top: 10px;
-    height: 150vh;
+    /* padding-top: 2rem; */
+    /* height: 135vh; */
+    min-height: 100vh;
   }
   .hero .row {
     flex-direction: column-reverse;
@@ -250,6 +378,11 @@
     font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
+  }
+  .hero .row .introduce,
+  .hero .row .header {
+    font-size: clamp(22px, 4vw, 28px); /* Menyesuaikan dengan layar kecil */
+    text-align: center;
   }
   .hero .row {
     margin: 20px;
@@ -263,5 +396,28 @@
     display: block; /* Mengubah tata letak tombol menjadi blok agar dapat diatur margin */
     margin-left: auto;
     margin-right: auto;
+  }
+  .header {
+    text-align: center !important;
+  }
+  .box {
+    max-width: 250px;
+    max-height: 250px;
+  }
+  .parallax-container {
+    height: 130vh; /* Kurangi tinggi agar tidak terlalu panjang */
+  }
+
+  .parallax span {
+    min-height: 90vh; /* Sesuaikan tinggi teks */
+    letter-spacing: -2px;
+  }
+
+  .parallax-top {
+    top: 0; /* Sesuaikan agar tidak terlalu tinggi */
+  }
+
+  .parallax-bottom {
+    bottom: 0; /* Sesuaikan agar tidak terlalu rendah */
   }
 }

@@ -1,17 +1,17 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-import NavbarComponent from "./components/NavbarComponent";
-import FooterComponents from "./components/FooterComponents";
+// Component
+import NavbarComponent from './components/NavbarComponent'
+import FooterComponents from './components/FooterComponents'
+import ScrollToTopOnNavigation from './components/ScrollToTopOnNavigation'
 
-import AboutmePage from "./pages/AboutmePage";
-import SkillsPage from "./pages/SkillsPage";
-import ProjectPage from "./pages/ProjectPage";
-import ContactPage from "./pages/ContactPage";
-import HeroPage from "./pages/HeroPage";
-
-import { Nav } from "react-bootstrap";
-import ScrollToTopOnNavigation from "./components/ScrollToTopOnNavigation";
+// Page
+import AboutmePage from './pages/AboutmePage'
+import SkillsPage from './pages/SkillsPage'
+import ProjectPage from './pages/ProjectPage'
+import ContactPage from './pages/ContactPage'
+import HeroPage from './pages/HeroPage'
 
 function App() {
   return (
@@ -39,7 +39,7 @@ function App() {
         <FooterComponents></FooterComponents>
       </Router>
     </div>
-  );
+  )
 }
 
 // <>
@@ -60,4 +60,4 @@ function App() {
 // <SkillsPage></SkillsPage>
 // <ProjectPage></ProjectPage>
 // <ContactPage></ContactPage>*/}
-export default App;
+export default App
