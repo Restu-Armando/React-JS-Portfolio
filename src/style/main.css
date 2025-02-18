@@ -3,7 +3,7 @@
   /* border: 1px solid black; */
 }
 
-/* html, */
+/* html,   */
 body {
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
@@ -29,14 +29,66 @@ body {
   ); /* Add your desired background color with some transparency for the blur effect */
   backdrop-filter: blur(4px); /* Adjust the blur value as needed */
 }
-.navbar-nav a:hover {
-  color: #13b0f5;
+.navbar-nav a {
+  color: var(--text-faded);
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  padding: 5px 15px;
+  transition: all 0.3s ease;
+}
+.navbar-nav a::before,
+.navbar-nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  background-color: #243748;
+  transition: all 0.3s ease;
+}
+.navbar-nav .nav-link.active::after {
+  content: '';
+  position: absolute;
+  /* left: 50%; */
+  /* bottom: -4px; */
+  width: 100%;
+  height: 2px;
+  background-color: #243748;
+}
+.navbar-nav a::before {
+  left: 0;
+  width: 0; /* Mulai dengan garis pendek */
+}
+.navbar-nav a::after {
+  right: 0;
+  width: 0; /* Mulai dengan garis pendek */
+}
+.navbar-nav a:hover::before {
+  width: 50%; /* Garis pertama lebih pendek */
+}
+.navbar-nav a:hover::after {
+  width: 50%; /* Garis kedua lebih panjang */
+}
+.icon-container {
+  transition: transform 250ms ease, filter 250ms ease;
+}
+.icon-container:has(:hover) :not(:hover) {
+  transform: scale(1);
+  filter: blur(1px);
+  animation: 350ms ease-out;
+}
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  background: white;
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
+  padding-top: 20px;
+  z-index: 1050;
 }
 
-.nav-link a {
-  text-decoration: none;
-  color: var(--text-faded);
-}
 .hero {
   position: relative;
   padding-top: 4rem;
@@ -46,10 +98,10 @@ body {
   z-index: 2;
 }
 .hero .row {
-  margin: 70px;
+  margin: 100px 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
   flex-wrap: wrap;
 }
 .hero .row .introduce {
@@ -58,13 +110,6 @@ body {
   color: var(--text-faded);
   line-height: 1.2;
 }
-/* .hero .row .header {
-  font-size: clamp(1.5rem, 4vw, 2rem);
-  font-weight: 400;
-  color: var(--text-faded);
-  display: inline-block;
-  text-align: center;
-} */
 .name {
   background: linear-gradient(90deg, #243748, #4b749f, #303a56);
   -webkit-background-clip: text;
@@ -385,7 +430,7 @@ body {
     text-align: center;
   }
   .hero .row {
-    margin: 20px;
+    /* margin: 20px; */
   }
   .hero .row .text-center {
     margin-top: 20px;

@@ -26,12 +26,12 @@ function App() {
               <div>
                 <HeroPage />
                 <SkillsPage />
-                <ProjectPage />
+                {/* <ProjectPage /> */}
               </div>
             }
           />
 
-          <Route path="/aboutme" element={<AboutmePage />} />
+          <Route path="/about" element={<AboutmePage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/skills" element={<SkillsPage />} />
           <Route path="/project" element={<ProjectPage />} />

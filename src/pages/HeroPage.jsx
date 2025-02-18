@@ -17,7 +17,7 @@ function HeroPage() {
 
       {/* Hero Section Content */}
       <Container>
-        <Row className="align-items-center">
+        <Row className="d-flex align-items-center justify-content-center">
           <Col lg="6" md="12" className="mt-4 mb-4 text-start text-dark">
             <motion.h1
               className="introduce"
