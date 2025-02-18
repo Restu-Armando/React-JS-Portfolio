@@ -32,7 +32,7 @@ function HeroPage() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1, delay: 0.5 }}
               >
-                Nama Saya
+                Restu Armando
               </motion.span>
               <br />
               <TypeAnimation
@@ -52,7 +52,11 @@ function HeroPage() {
             </motion.h1>
 
             <button className="button shadow mt-3 mt-md-3">
-              <a href="" target="_blank" rel="noreferrer">
+              <a
+                href="https://drive.google.com/file/d/1aY9Ebp0lNPHs8mw0YnysH63MEILcfBix/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <span className="button-content">Get in Touch</span>
               </a>
             </button>
