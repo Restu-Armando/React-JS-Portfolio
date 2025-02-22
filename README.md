@@ -1,8 +1,45 @@
-# React + Vite
+# My React Portfolio 🧑‍💻
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Portfolio Screenshot](public/portfolio-screenshot.png)
 
-Currently, two official plugins are available:
+📢 **Live Demo:** [Netlify Link](https://your-portfolio.netlify.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+## ✨ Key Features
+✅ Cool animations with Framer Motion  
+✅ Responsive design using Tailwind CSS  
+✅ Dark Mode & Light Mode  
+✅ Project page with filters  
+✅ Contact page with email integration  
+
+---
+
+## 📦 Cara Menginstal & Menjalankan
+
+Kloning repositori ini:
+```bash
+[git clone https://github.com/username/React-JS-Portfolio.git](https://github.com/Restu-Armando/React-JS-Portfolio.git)
+cd React-JS-Portofolio
+```
+npm install
+npm run dev
+
+## 🛠 Teknologi yang Digunakan
+React.js – Library UI
+Vite – Build tool
+Framer Motion – Animation
+Bootstrap CSS – Styling
+Netlify/Vercel – Deployment
+
+---
+
+📦 src
+ ┣ 📂 public        # Image path
+ ┣ 📂 components    # Components reusable
+ ┣ 📂 pages         # Pages
+ ┣ 📂 data          # Data projects & skill
+ ┣ 📜 App.jsx       # Root component
+ ┣ 📜 main.css      # Main Styling
+
+---
