@@ -22,8 +22,10 @@ Kloning repositori ini:
 [git clone https://github.com/username/React-JS-Portfolio.git](https://github.com/Restu-Armando/React-JS-Portfolio.git)
 cd React-JS-Portofolio
 ```
+```bash
 npm install
 npm run dev
+```
 
 ## 🛠 Teknologi yang Digunakan
 React.js – Library UI
