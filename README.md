@@ -26,13 +26,14 @@ cd React-JS-Portofolio
 npm install
 npm run dev
 ```
-
+---
 🛠 Teknologi yang Digunakan
 React.js – Library UI
 Vite – Build tool
 Framer Motion – Animation
 Bootstrap CSS – Styling
 Netlify/Vercel – Deployment
+---
 
 ---
 
