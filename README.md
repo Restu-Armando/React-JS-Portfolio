@@ -27,7 +27,7 @@ npm install
 npm run dev
 ```
 
-## 🛠 Teknologi yang Digunakan
+🛠 Teknologi yang Digunakan
 React.js – Library UI
 Vite – Build tool
 Framer Motion – Animation
