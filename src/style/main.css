@@ -11,15 +11,17 @@ body {
 
 :root {
   --main-text: #42446e;
-  --text-faded: #666666;
+  --text-faded: #7d7d7d;
 }
 
+/* == Navbar Section == */
 .navbar {
   background-color: transparent;
   transition: background-color 0.5s ease;
   /* Add other styles as needed */
   width: 100%;
 }
+
 .navbar.scrolled {
   background-color: rgba(
     255,
@@ -88,7 +90,9 @@ body {
   padding-top: 20px;
   z-index: 1050;
 }
+/* == Navbar End == */
 
+/* == Hero Section == */
 .hero {
   position: relative;
   padding-top: 4rem;
@@ -223,26 +227,29 @@ body {
 .parallax-container {
   position: absolute;
   top: 0;
+  left: 0;
+  right: 0;
   bottom: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
   overflow: hidden;
 }
+
 .parallax {
   position: relative;
-  bottom: 0;
-  left: 0;
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  z-index: -1; /* Background */
+  z-index: -1;
 }
+
 .parallax span {
   min-height: 85vh;
-  /* font-family: 'Plaster', cursive; */
   letter-spacing: -3px;
+  display: inline-block; /* pastikan setiap span diperlakukan sebagai block untuk animasi */
 }
+
 .scroller {
   display: flex;
   width: max-content;
@@ -253,17 +260,21 @@ body {
   text-transform: uppercase;
   white-space: nowrap;
 }
+
 .parallax-top {
   position: absolute;
-  top: 10%; /* Atur sesuai kebutuhan */
-  width: 100%;
-}
-.parallax-bottom {
-  position: absolute;
-  bottom: 10%; /* Atur sesuai kebutuhan */
+  top: 10%;
   width: 100%;
 }
 
+.parallax-bottom {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+}
+/* == Hero End == */
+
+/* == Skill Section == */
 .skills {
   margin-bottom: 10rem;
 }
@@ -276,7 +287,9 @@ body {
 .skills p {
   color: var(--text-faded);
 }
+/* == Skill End == */
 
+/* == Project Section == */
 .project .button {
   position: relative;
   overflow: hidden;
@@ -356,9 +369,7 @@ body {
 .card:hover {
   transform: scale(1.05);
 }
-.aboutme h1 {
-  color: var(--main-text);
-}
+
 .row:nth-child(1) p {
   text-align: justify;
 }
@@ -372,10 +383,76 @@ body {
   color: transparent;
   text-decoration: none;
 }
+
+/* == About Section == */
+
+.about-header {
+  font-weight: 700;
+  font-size: clamp(46px, 6vw, 82px);
+  color: var(--main-text);
+}
+.background-aboutme {
+  background-color: #f5f5f5;
+}
+.about-header span {
+  color: plum;
+}
 .aboutme p {
   color: var(--text-faded);
-  font-size: 18px;
+  font-size: clamp(18px, 2.5vw, 22px);
 }
+/* .about-content h2 {
+  font-size: clamp(1.4375rem, -0.3324rem + 5.7208vw, 3rem);
+  font-weight: 700;
+} */
+/* .about-content {
+  padding: 2rem 0 !important;
+} */
+/* .img-content {
+  padding: 2rem 0;
+} */
+
+.aboutme .button {
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  background: var(--main-text);
+  background-size: 400%;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.aboutme .button a {
+  color: #fff;
+  text-decoration: none;
+}
+.aboutme .button:hover::before {
+  transform: scaleX(1);
+}
+.aboutme .button-content {
+  position: relative;
+  z-index: 1;
+}
+.aboutme .button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    rgba(231, 15, 170, 1) 10.8%,
+    rgba(19, 176, 245, 1) 94.3%
+  );
+  transition: all 0.475s;
+}
+
 .aboutme .detail-work p {
   color: var(--text-faded);
   font-size: 12px;
@@ -384,13 +461,21 @@ body {
   color: var(--text-faded);
   font-size: 12px;
 }
-.aboutme span {
+.aboutme .badge {
   background-color: #d7ffe0;
 }
+.aboutme .title-work {
+  color: var(--main-text);
+  font-size: clamp(20px, 2.5vw, 32px);
+}
 .aboutme h6 {
-  color: var(--text-faded);
+  color: var(--main-text);
   font-weight: normal;
 }
+
+/* == About End == */
+
+/* == Footer Section == */
 .footer {
   margin-top: 15em;
   margin-bottom: 2em;
@@ -407,7 +492,9 @@ body {
   background-clip: text;
   color: transparent;
 }
+/* == Footer End == */
 
+/* == Media Querry == */
 @media screen and (max-width: 992px) {
   .hero {
     /* padding-top: 2rem; */

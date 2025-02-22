@@ -30,15 +30,19 @@ const ParallaxText = ({ children, baseVelocity = 50 }) => {
 
   const directionFactor = useRef(1)
   useAnimationFrame((t, delta) => {
-    let moveBy = directionFactor.current * baseVelocity * (delta / 2000) // Kurangi speed
+    const deltaFactor = delta / 2000
+    const currentVelocity = velocityFactor.get()
 
-    if (velocityFactor.get() < 0) {
-      directionFactor.current = -1
-    } else if (velocityFactor.get() > 0) {
-      directionFactor.current = 1
-    }
+    let moveBy = directionFactor.current * baseVelocity * deltaFactor
 
-    moveBy += directionFactor.current * moveBy * velocityFactor.get()
+    directionFactor.current =
+      currentVelocity < 0
+        ? -1
+        : currentVelocity > 0
+        ? 1
+        : directionFactor.current
+
+    moveBy += directionFactor.current * moveBy * currentVelocity
     baseX.set(baseX.get() + moveBy)
   })
 

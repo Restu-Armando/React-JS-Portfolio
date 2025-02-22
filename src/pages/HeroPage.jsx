@@ -75,7 +75,7 @@ function HeroPage() {
                 duration: 1, // Untuk fade-in dan scale
                 delay: 1.2,
                 y: {
-                  duration: 3,
+                  duration: 10,
                   repeat: Infinity,
                   ease: 'easeInOut',
                 },
@@ -89,6 +89,7 @@ function HeroPage() {
                   width="250"
                   height="250"
                   className="img-fluid"
+                  loading="lazy"
                 />
               </motion.div>
             </motion.div>
