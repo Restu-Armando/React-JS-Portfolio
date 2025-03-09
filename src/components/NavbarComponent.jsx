@@ -70,14 +70,14 @@ function NavbarComponent() {
               ))}
               <div className="d-flex gap-2 icon-container">
                 {[
-                  { icon: 'github', link: 'https://github.com/your-username' },
+                  { icon: 'github', link: 'https://github.com/Restu-Armando' },
                   {
                     icon: 'instagram',
-                    link: 'https://instagram.com/your-username',
+                    link: 'https://instagram.com/restu.armando',
                   },
                   {
                     icon: 'linkedin',
-                    link: 'https://linkedin.com/in/your-username',
+                    link: 'https://linkedin.com/in/restu-armando',
                   },
                 ].map((social, idx) => (
                   <motion.a
@@ -138,14 +138,14 @@ function NavbarComponent() {
               ))}
               <div className="d-flex justify-content-center gap-3 mt-4">
                 {[
-                  { icon: 'github', link: 'https://github.com/your-username' },
+                  { icon: 'github', link: 'https://github.com/Restu-Armando' },
                   {
                     icon: 'instagram',
-                    link: 'https://instagram.com/your-username',
+                    link: 'https://instagram.com/restu.armando',
                   },
                   {
                     icon: 'linkedin',
-                    link: 'https://linkedin.com/in/your-username',
+                    link: 'https://linkedin.com/in/restu-armando',
                   },
                 ].map((social, idx) => (
                   <motion.a

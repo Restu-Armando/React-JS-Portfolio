@@ -5,6 +5,7 @@ import { Certifications, Experience, Skills } from '../data/data'
 
 // Components
 import TechBadge from '../components/BadgeComponent'
+import { Link } from 'react-router-dom'
 
 const AboutmePage = () => {
   const motionControls = useAnimation()
@@ -65,8 +66,10 @@ const AboutmePage = () => {
               animate="visible"
               transition={{ duration: 1, ease: 'easeOut', delay: 0.6 }}
             >
-              <button className="button shadow mt-3 mt-md-3" href="/contact">
-                <span className="button-content">Get in Touch</span>
+              <button className="button shadow mt-3 mt-md-3">
+                <Link to="/contact">
+                  <span className="button-content">Let's Connect</span>
+                </Link>
               </button>
             </motion.div>
           </Col>
@@ -286,10 +289,8 @@ const AboutmePage = () => {
             </Col>
           ))}
         </div>
-      </Container>
-
-      {/* SECTION TECH STACK */}
-      {/* <Row>
+        {/* SECTION TECH STACK */}
+        {/* <Row>
         <Col>
           <div
             className="w-100 mt-5 overflow-hidden "
@@ -335,6 +336,7 @@ const AboutmePage = () => {
           </div>
         </Col>
       </Row> */}
+      </Container>
     </div>
   )
 }

@@ -1,34 +1,72 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
+import { motion } from 'framer-motion'
 
-import { Skills } from "../data/data";
+import { Skills } from '../data/data'
 
 const SkillsPage = () => {
-  return (
-    <div className="skills" id="skills">
-      <Container className="text-center fluid">
-        <h1
-          data-aos-once="false"
-          data-aos="zoom-in-down"
-          data-aos-delay="200"
-          className="mt-5"
-        >
-          My Tech Stack
-        </h1>
-        <p data-aos="zoom-in-down" className="mb-5">
-          Technologies i've been using for work with recently
-        </p>
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.2, delayChildren: 0.3 }, // Delay untuk efek satu per satu
+    },
+  }
 
-        <Row className="d-flex justify-content-center row-cols-lg-6 row-cols-md-3 row-cols-2 g-2 mt-5">
-          {Skills.map((data, id) => (
-            <Col data-aos="zoom-in" key={data.id} className="g-5">
-              <img src={data.imageURL} width="70" height="70" alt={data.name} />
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  }
+  return (
+    <div className="skills">
+      <Container className="text-center">
+        {/* Judul */}
+        <motion.h1
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="mt-5 fw-bold"
+        >
+          Tech Stack
+        </motion.h1>
+
+        {/* Deskripsi */}
+        <motion.p
+          initial={{ opacity: 0, y: -10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+          className="mb-5 text-muted"
+        >
+          Technologies I use to build and create amazing experiences.
+        </motion.p>
+
+        {/* Grid */}
+        <Row className="justify-content-center g-3 row-cols-lg-6 row-cols-md-4 row-cols-2">
+          {Skills.map((data, index) => (
+            <Col key={data.id}>
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }} // Animasi tetap berjalan setiap muncul
+                transition={{ duration: 0.6, delay: index * 0.1 }} // Mirip AOS delay otomatis
+                className="tech-card"
+              >
+                <img
+                  src={data.imageURL}
+                  width="70"
+                  height="70"
+                  alt={data.name}
+                />
+                <p className="mt-3 fw-semibold">{data.name}</p>
+              </motion.div>
             </Col>
           ))}
         </Row>
       </Container>
     </div>
-  );
-};
+  )
+}
 
-export default SkillsPage;
+export default SkillsPage

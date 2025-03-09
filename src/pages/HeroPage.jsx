@@ -18,7 +18,7 @@ function HeroPage() {
       {/* Hero Section Content */}
       <Container>
         <Row className="d-flex align-items-center justify-content-center">
-          <Col lg="6" md="12" className="mt-4 mb-4 text-start text-dark">
+          <Col lg="7" md="12" className="mt-4 mb-4 text-start text-dark">
             <motion.h1
               className="introduce"
               initial={{ opacity: 0, y: 50 }}
@@ -27,7 +27,7 @@ function HeroPage() {
             >
               Hi 👋 I’m <br />
               <motion.span
-                className="name"
+                className="introduce fw-medium"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1, delay: 0.5 }}
@@ -37,23 +37,24 @@ function HeroPage() {
               <br />
               <TypeAnimation
                 sequence={[
-                  'I Am FrontEnd Developer 🌐',
+                  'I Am FrontEnd Developer ',
                   400,
-                  'UI/UX Designer 🎨',
+                  'UI/UX Designer ',
                   400,
-                  'Enthusiastic Web Developer 🚀',
+                  'Enthusiastic Web Developer ',
                   400,
                 ]}
                 wrapper="span"
                 cursor={true}
                 repeat={Infinity}
+                className="name"
                 style={{ display: 'inline-block' }}
               />
             </motion.h1>
 
             <button className="button shadow mt-3 mt-md-3">
               <a
-                href="https://drive.google.com/file/d/1aY9Ebp0lNPHs8mw0YnysH63MEILcfBix/view?usp=sharing"
+                href="https://drive.google.com/file/d/1uYrNwfllrgG1DKb_6KhiLvUqXH5jIg0d/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -62,7 +63,7 @@ function HeroPage() {
             </button>
           </Col>
 
-          <Col lg="5" md="12" className="text-center pb-5 d-block">
+          <Col lg="4" md="12" className="text-center pb-5 d-block">
             <motion.div
               className="box"
               initial={{ opacity: 0, scale: 0.8 }}
@@ -73,7 +74,7 @@ function HeroPage() {
               }}
               transition={{
                 duration: 1, // Untuk fade-in dan scale
-                delay: 1.2,
+                delay: 0.8,
                 y: {
                   duration: 10,
                   repeat: Infinity,

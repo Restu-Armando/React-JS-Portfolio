@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 // Component
 import NavbarComponent from './components/NavbarComponent'
-import FooterComponents from './components/FooterComponents'
+import FooterComponents from './components/FooterComponents copy'
 import ScrollToTopOnNavigation from './components/ScrollToTopOnNavigation'
 
 // Page
@@ -18,15 +18,16 @@ function App() {
     <div>
       <Router>
         <NavbarComponent></NavbarComponent>
-        <ScrollToTopOnNavigation />
+
         <Routes>
           <Route
             path="/"
             element={
               <div>
                 <HeroPage />
+                <ScrollToTopOnNavigation />
                 <SkillsPage />
-                {/* <ProjectPage /> */}
+                <ProjectPage />
               </div>
             }
           />
@@ -36,6 +37,7 @@ function App() {
           <Route path="/skills" element={<SkillsPage />} />
           <Route path="/project" element={<ProjectPage />} />
         </Routes>
+
         <FooterComponents></FooterComponents>
       </Router>
     </div>
