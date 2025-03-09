@@ -1,48 +1,52 @@
 # My React Portfolio 🧑‍💻
 
-![Portfolio Screenshot](public/portfolio-screenshot.png)
-
-📢 **Live Demo:** [Netlify Link](https://your-portfolio.netlify.app)
+📢 **Live Demo:** [Netlify Link](https://restuarmando-portfolio.netlify.app/)
 
 ---
 
 ## ✨ Key Features
+
 ✅ Cool animations with Framer Motion  
-✅ Responsive design using Tailwind CSS  
-✅ Dark Mode & Light Mode  
+✅ Responsive design using Bootstrap CSS  
 ✅ Project page with filters  
-✅ Contact page with email integration  
+✅ Contact page with email integration
+✅ Parallax Scroll Trigger
 
 ---
 
-## 📦 Cara Menginstal & Menjalankan
+## 📦 How to install & run
 
-Kloning repositori ini:
+Cloning this repository:
+
 ```bash
 [git clone https://github.com/username/React-JS-Portfolio.git](https://github.com/Restu-Armando/React-JS-Portfolio.git)
 cd React-JS-Portofolio
 ```
+
 ```bash
 npm install
 npm run dev
 ```
+
 ---
-🛠 Teknologi yang Digunakan
-React.js – Library UI
-Vite – Build tool
-Framer Motion – Animation
-Bootstrap CSS – Styling
-Netlify/Vercel – Deployment
+
+🛠 Technology Used
+React.js - UI library
+Vite - Tool for building
+Framer Motion - Animation
+Bootstrap CSS - Styling
+Netlify/Vercel - Deployment
+
 ---
 
 ---
 
 📦 src
- ┣ 📂 public        # Image path
- ┣ 📂 components    # Components reusable
- ┣ 📂 pages         # Pages
- ┣ 📂 data          # Data projects & skill
- ┣ 📜 App.jsx       # Root component
- ┣ 📜 main.css      # Main Styling
+┣ 📂 public # Image path
+┣ 📂 components # Components reusable
+┣ 📂 pages # Pages
+┣ 📂 data # Data projects & skill
+┣ 📜 App.jsx # Root component
+┣ 📜 main.css # Main Styling
 
 ---
